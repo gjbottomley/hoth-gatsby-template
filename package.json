@@ -1,18 +1,24 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "paradise-cookies",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Classic cookies, naturally vegan and free of added preservatives.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "George Bottomley <george-bottomley@hotmail.com>",
   "dependencies": {
     "gatsby": "^5.12.4",
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
+    "gatsby-plugin-sass": "^6.12.0",
     "gatsby-plugin-sharp": "^5.12.0",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^5.12.0",
     "gatsby-transformer-sharp": "^5.12.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-slick": "^0.29.0",
+    "sass": "^1.68.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "prettier": "^2.8.8"

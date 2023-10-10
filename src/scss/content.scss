@@ -1,0 +1,202 @@
+.container {
+  width: 100%;
+  max-width: $container-sm;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content {
+  padding: 60px $margin-sm;
+  text-align: left;
+
+  @media all and (max-width: 767px) {
+    padding: 40px $margin-sm;
+  }
+}
+
+.banner {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  overflow: hidden;
+  min-height: 600px;
+  background-color: $white;
+
+  @media all and (max-width: 767px) {
+    height: auto;
+    min-height: 500px;
+  }
+
+  .brand {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    margin-top: -20px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media all and (max-width: 767px) {
+      img {
+        width: 240px;
+      }
+    }
+  }
+}
+
+.about {
+  background: $default;
+  position: relative;
+  z-index: 4;
+  padding: 40px 20px;
+
+  @media all and (max-width: 767px) {
+    padding: 0px 20px;
+  }
+
+  h2,
+  p {
+    color: $white;
+  }
+
+  img {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    @media all and (max-width: 767px) {
+      width: 240px;
+      top: -80px;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    background-image: url("../images/about.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 104px;
+  }
+
+  &::before {
+    bottom: 100%;
+  }
+
+  &::after {
+    top: 100%;
+    transform: rotate(180deg);
+  }
+}
+
+.products {
+  background: $white;
+  padding: 140px 0;
+  overflow: hidden;
+
+  @media all and (max-width: 767px) {
+    padding: 100px 0 60px 0px;
+  }
+
+  .slide-wrapper {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 120px;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    &::before {
+      left: 0;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+
+    &:after {
+      right: 0;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+    }
+  }
+}
+
+.findus {
+  background: $grey;
+  position: relative;
+  padding: 40px 20px;
+
+  @media all and (max-width: 767px) {
+    padding: 0px 20px;
+
+    img {
+      width: 240px;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    background-image: url("../images/findus.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 104px;
+  }
+
+  &::before {
+    bottom: 100%;
+  }
+
+  &::after {
+    top: 100%;
+    transform: rotate(180deg);
+  }
+}
+
+.contact {
+  background: $order;
+  color: $white;
+  padding: 140px 20px 40px;
+
+  @media all and (max-width: 767px) {
+    padding: 100px 20px 40px 20px;
+  }
+
+  h2,
+  p {
+    color: $white;
+  }
+
+  span {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+}

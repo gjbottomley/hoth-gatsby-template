@@ -1,0 +1,46 @@
+.product-wrap {
+  position: relative;
+  padding: 40px 20px;
+
+  .gatsby-image-wrapper {
+    position: absolute;
+    top: -60px;
+    left: -20px;
+    right: 0px;
+    width: 280px;
+    z-index: 1;
+  }
+}
+
+.product {
+  background: $grey;
+  border-radius: $border-radius;
+  position: relative;
+  padding-top: 130px;
+  margin-bottom: 60px;
+  width: 200px;
+  text-align: center;
+  transform: scale(1);
+  transition: 0.8s ease;
+
+  .slick-center & {
+    transform: scale(1.2);
+  }
+
+  .name {
+    font-family: hermeneus_oneregular;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 0 20px 50px;
+  }
+
+  .button {
+    background: $order;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -30px;
+    transform: translateX(-50%);
+    min-width: 140px;
+  }
+}
