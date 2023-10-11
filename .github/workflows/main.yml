@@ -36,4 +36,4 @@ jobs:
           SOURCE: "public/"
           REMOTE_HOST: ${{ secrets.FTP_ADDRESS }}
           REMOTE_USER: ${{ secrets.FTP_USERNAME }}
-          TARGET: "httpdocs"
+          TARGET: "httpdocs/"
