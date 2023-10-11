@@ -6,7 +6,11 @@ import { GoogleRecaptcha } from "../components/reCaptcha"
 
 export const ContactForm = ({ message, update }) => {
   return (
-    <form method="post" className="form" action={`https://formspree.io/f/`}>
+    <form
+      method="post"
+      className="form"
+      action={`https://formspree.io/f/${process.env.GATSBY_FORM_KEY}`}
+    >
       <div className="form-group">
         <input
           name="name"
@@ -39,7 +43,7 @@ export const ContactForm = ({ message, update }) => {
       <div className="form-group">
         <input
           type="text"
-          name="telephone"
+          name="Location"
           className="form-control"
           placeholder="Location"
         />

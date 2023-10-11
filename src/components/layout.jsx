@@ -1,9 +1,13 @@
 import React from "react"
 
+import { useAnayltics, usePageTracker } from "../utils/analytics"
 import "../../src/scss/global.scss"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  useAnayltics()
+  usePageTracker()
+
   return (
     <>
       <div>
