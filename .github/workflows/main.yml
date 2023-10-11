@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v4
 
       - name: Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: "18.x"
 
@@ -30,11 +30,13 @@ jobs:
         run: ls -la public
 
       - name: 📂 Deploy files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_ADDRESS }}
           username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_ADDRESS }}
+          port: 22
+          sftp_only: true
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: httpdocs/
-          local-dir: ./public/
-          dry-run: true
+          local_path: "./public/*"
+          remote_path: "/httpdocs/"
