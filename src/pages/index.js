@@ -41,7 +41,6 @@ const Home = () => {
             </p>
           </div>
         </div>
-
         <div className="products">
           <div className="container">
             <h2>Our Products</h2>
