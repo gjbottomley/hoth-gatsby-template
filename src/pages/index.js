@@ -13,6 +13,7 @@ import Seo from "../components/seo"
 
 // None lazy load images
 import cookies from "../images/batch.png"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Home = () => {
   // Contact form textarea state
@@ -53,6 +54,13 @@ const Home = () => {
         <div className="contact" id="contact">
           <div className="container">
             <h2>Contact Us</h2>
+            <a
+              href="mailto:quack@paradisecookies.co.nz"
+              title="quack@paradisecookies.co.nz"
+              class="email"
+            >
+              quack@paradisecookies.co.nz
+            </a>
             <p>
               Orders require a minimum of 3 days notice as they made to order.
               Pick up is available however i can also offer delivery on Mondays
@@ -65,6 +73,20 @@ const Home = () => {
               </span>
             </p>
             <ContactForm message={message} update={setMessage} />
+            <StaticImage
+              src="../images/cookies.png"
+              alt="Paradise Cookies"
+              placeholder="blurred"
+              width={500}
+              className="cookies"
+            />
+            <StaticImage
+              src="../images/cookie.png"
+              alt="Paradise Cookie"
+              placeholder="blurred"
+              width={350}
+              className="cookie"
+            />
           </div>
         </div>
       </Layout>

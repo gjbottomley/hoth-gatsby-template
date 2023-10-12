@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.container--large {
+  max-width: $container-lg;
+}
+
 .content {
   padding: 60px $margin-sm;
   text-align: left;
@@ -100,7 +104,6 @@
 }
 
 .products {
-  background: $white;
   padding: 140px 0;
   overflow: hidden;
 
@@ -108,7 +111,7 @@
     padding: 100px 0 60px 0px;
   }
 
-  .slide-wrapper {
+  .container {
     position: relative;
 
     &::before,
@@ -184,6 +187,9 @@
   background: $order;
   color: $white;
   padding: 140px 20px 40px;
+  .container {
+    position: relative;
+  }
 
   @media all and (max-width: 767px) {
     padding: 100px 20px 40px 20px;
@@ -197,5 +203,25 @@
   span {
     font-size: 1rem;
     opacity: 0.8;
+  }
+
+  .cookies,
+  .cookie {
+    position: absolute;
+
+    @media all and (max-width: 767px) {
+      display: none;
+    }
+  }
+  .cookies {
+    top: 0;
+    right: 0;
+    transform: translate(100%, -50%);
+  }
+
+  .cookie {
+    bottom: 0;
+    left: 0;
+    transform: translateX(-120%);
   }
 }
