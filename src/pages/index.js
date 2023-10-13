@@ -45,7 +45,12 @@ const Home = () => {
         </MouseParallaxContainer>
         <div className="about">
           <div className="container">
-            <img src={cookies} width={350} alt="Just a bunch of cookies" />
+            <img
+              src={cookies}
+              width={350}
+              height={85}
+              alt="Just a bunch of cookies"
+            />
             <h2>About us</h2>
             <p>
               Classic cookies, naturally vegan and free of added preservatives.
