@@ -75,31 +75,7 @@ export const ProductSlider = ({ callback }) => {
         <div>
           <div className="product-wrap">
             <StaticImage
-              src="../images/products/blank.png"
-              alt="Choc Raspberry"
-              placeholder="blurred"
-              width={280}
-              height={280}
-            />
-            <div className="product">
-              <div className="name">
-                CHOC <br />
-                Raspberry
-              </div>
-              <button
-                onClick={() => handleMessage("CHOC Raspberry")}
-                className="button"
-              >
-                Order
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div className="product-wrap">
-            <StaticImage
-              src="../images/products/blank.png"
+              src="../images/products/biscoff.png"
               alt="Biscoff Crunch"
               placeholder="blurred"
               width={280}

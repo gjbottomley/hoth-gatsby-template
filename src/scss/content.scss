@@ -214,14 +214,16 @@
     }
   }
   .cookies {
-    top: 0;
-    right: 0;
-    transform: translate(100%, -50%);
+    top: -20%;
+    right: -70%;
   }
 
   .cookie {
     bottom: 0;
-    left: 0;
-    transform: translateX(-120%);
+    left: -55%;
   }
+}
+
+.grecaptcha-badge {
+  z-index: 99;
 }

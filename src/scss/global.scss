@@ -26,6 +26,7 @@ body {
   background: #fff;
   color: #000;
   font-family: $font;
+  overflow: hidden;
 
   scroll-behavior: smooth;
 }
@@ -168,6 +169,11 @@ footer {
   .about + & {
     padding-top: 100px;
   }
+}
+
+.parallax {
+  overflow: visible !important;
+  height: 100%;
 }
 
 @import "slick-carousel/slick/slick.css";
