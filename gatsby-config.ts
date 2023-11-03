@@ -6,10 +6,11 @@ require("dotenv").config({
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Hoth Gatsby Template`,
-    description: `Hoth a Gatsby Template`,
+    title: `Hoth Template`,
+    description: `Hoth - A Gatsby Template`,
     author: `George Bottomley`,
-    siteUrl: ``,
+    icon: `src/images/icon.png`,
+    siteUrl: `https://github.com/gjbottomley/hoth-gatsby-template`,
   },
   graphqlTypegen: true,
   plugins: [
@@ -29,11 +30,11 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Hoth Template`,
-        short_name: ``,
+        short_name: `Hoth`,
         start_url: `/`,
         background_color: `#76BCBC`,
         display: `minimal-ui`,
-        icon: ``,
+        icon: `src/images/icon.png`,
       },
     },
   ],

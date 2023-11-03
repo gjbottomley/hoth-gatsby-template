@@ -7,9 +7,9 @@
 2.  **Setup ENV.**
 
     ```shell
-    cd paradise-cookies/
+    cd hoth-gatsby-template/
     rm -rf .env
-    echo GATSBY_NAME="Paradise Cookies" > .env
+    echo GATSBY_NAME="" > .env
     echo GATSBY_GTRACKING="" >> .env
     echo GATSBY_RECAPTCHA_KEY="" >>> .env
     echo GATSBY_FORM_KEY="" >>>> .env

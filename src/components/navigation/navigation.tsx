@@ -13,14 +13,14 @@ export const Navigation = ({ children }) => {
   )
 }
 
-export const Item = ({ name, icon }) => {
+export const Item = ({ name, icon, path }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <motion.li whileTap={{ scale: 0.97 }}>
       <Link
         className="menu-item"
-        to={"./"}
+        to={path}
         title={name}
         activeClassName="active"
       >

@@ -9,7 +9,7 @@
 
 .menu {
   width: 100%;
-  max-width: 900px;
+  max-width: max-content;
   margin: 0 auto;
   border-radius: 12px;
   box-shadow: 0px 1px 19px -5px rgba(0, 0, 0, 0.15);
@@ -86,7 +86,7 @@ a {
   }
 
   &:hover {
-    background: rgba($default, 0.4);
+    background: rgba($default, 0.2);
     color: $black;
   }
 }

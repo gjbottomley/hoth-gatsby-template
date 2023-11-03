@@ -68,23 +68,11 @@
     color: $white;
   }
 
-  img {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-
-    @media all and (max-width: 767px) {
-      width: 240px;
-      top: -80px;
-    }
-  }
-
   &::before,
   &::after {
     content: "";
     display: block;
-    background-image: url("../images/about.svg");
+    //background-image: url("../images/about.svg");
     background-position: bottom;
     background-repeat: repeat-x;
     position: absolute;
@@ -101,129 +89,4 @@
     top: 100%;
     transform: rotate(180deg);
   }
-}
-
-.products {
-  padding: 140px 0;
-  overflow: hidden;
-
-  @media all and (max-width: 767px) {
-    padding: 100px 0 60px 0px;
-  }
-
-  .container {
-    position: relative;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 120px;
-      z-index: 1;
-      pointer-events: none;
-    }
-
-    &::before {
-      left: 0;
-      background: rgb(255, 255, 255);
-      background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-    }
-
-    &:after {
-      right: 0;
-      background: rgb(255, 255, 255);
-      background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-      );
-    }
-  }
-}
-
-.findus {
-  background: $grey;
-  position: relative;
-  padding: 40px 20px;
-
-  @media all and (max-width: 767px) {
-    padding: 0px 20px;
-
-    img {
-      width: 240px;
-    }
-  }
-
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    background-image: url("../images/findus.svg");
-    background-position: bottom;
-    background-repeat: repeat-x;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 104px;
-  }
-
-  &::before {
-    bottom: 100%;
-  }
-
-  &::after {
-    top: 100%;
-    transform: rotate(180deg);
-  }
-}
-
-.contact {
-  background: $order;
-  color: $white;
-  padding: 140px 20px 40px;
-  .container {
-    position: relative;
-  }
-
-  @media all and (max-width: 767px) {
-    padding: 100px 20px 40px 20px;
-  }
-
-  h2,
-  p {
-    color: $white;
-  }
-
-  span {
-    font-size: 1rem;
-    opacity: 0.8;
-  }
-
-  .cookies,
-  .cookie {
-    position: absolute;
-
-    @media all and (max-width: 767px) {
-      display: none;
-    }
-  }
-  .cookies {
-    top: -20%;
-    right: -70%;
-  }
-
-  .cookie {
-    bottom: 0;
-    left: -55%;
-  }
-}
-
-.grecaptcha-badge {
-  z-index: 99;
 }
