@@ -32,5 +32,4 @@
     gatsby clean
     gatsby build
 
-
-    Build will be found in public/
+**Build will be found in public/**
