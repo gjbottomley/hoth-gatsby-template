@@ -18,21 +18,4 @@
   &:hover {
     opacity: 0.8;
   }
-
-  .findus & {
-    background-color: $find;
-    margin-top: 20px;
-  }
-}
-
-.email {
-  color: $white;
-  font-size: 1.4rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-
-  &:hover {
-    opacity: 0.6;
-  }
 }

@@ -2,7 +2,6 @@ import React from "react"
 
 import { useAnayltics, usePageTracker } from "../utils/analytics"
 import "../../src/scss/global.scss"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   useAnayltics()
@@ -16,7 +15,7 @@ const Layout = ({ children }) => {
 
           <footer>
             <div className="container">
-              © {new Date().getFullYear()} &middot; Paradise Cookies
+              © {new Date().getFullYear()} &middot; {process.env.GATSBY_NAME}
             </div>
           </footer>
         </main>

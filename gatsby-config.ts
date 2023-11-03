@@ -6,11 +6,10 @@ require("dotenv").config({
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Paradise Cookies`,
-    description: `Classic cookies, naturally vegan and free of added preservatives.`,
+    title: `Hoth Gatsby Template`,
+    description: `Hoth a Gatsby Template`,
     author: `George Bottomley`,
-    icon: `./src/favicon/android-chrome-192x192.png`,
-    siteUrl: `https://paradisecookies.co.nz`,
+    siteUrl: ``,
   },
   graphqlTypegen: true,
   plugins: [
@@ -29,12 +28,12 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Paradise Cookies`,
-        short_name: `Paradise`,
+        name: `Hoth Template`,
+        short_name: ``,
         start_url: `/`,
         background_color: `#76BCBC`,
         display: `minimal-ui`,
-        icon: `src/favicon/android-chrome-192x192.png`,
+        icon: ``,
       },
     },
   ],
