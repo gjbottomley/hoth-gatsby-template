@@ -29,7 +29,7 @@
 
 ## 🚀 Build
 
-      ```shell
+    ```shell
     gatsby clean
     gatsby build
     ```
